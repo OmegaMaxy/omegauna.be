@@ -1,8 +1,12 @@
 const RESEND_API_KEY = 're_W33GQU8f_4fhUEzM5g79woWtt2tCvW792';
 
+document.getElementById('ouform').onsubmit = function() {
+  return false;
+};
+
 async function a3cd1f_send() {
 
-
+  document.getElementById('ouform-confirm').style.display = "block";
   const email = document.getElementById('email');
   const fullname = document.getElementById('fullname');
   const tel = document.getElementById('tel');
@@ -34,7 +38,7 @@ async function a3cd1f_send() {
 }
 async function a3cd1f_full_send() {
 
-
+  document.getElementById('ouform-confirm').style.display = "block";
   const email = document.getElementById('email');
   const fullname = document.getElementById('fullname');
   const tel = document.getElementById('tel');
